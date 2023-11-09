@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -7,19 +7,29 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(14, 98%, 50%);
-  --black-color: hsl(0, 0%, 0%);
-  --black-color-light: hsl(0, 0%, 40%);
-  --white-color: hsl(0, 0%, 95%);
-  --title-color: hsl(0, 0%, 0%);
-  --text-color: hsl(0, 0%, 35%);
-  --text-color-light: hsl(0, 0%, 64%);
-  --body-color: hsl(0, 0%, 87%);
-  --container-color: hsl(0, 0%, 83%);
+  --first-color: hsl(14, 98%, 55%);
+  /* Slightly adjusted hue and saturation */
+  --black-color: hsl(0, 0%, 5%);
+  /* Darkened black color */
+  --black-color-light: hsl(0, 0%, 45%);
+  /* Darkened lighter black color */
+  --white-color: hsl(0, 0%, 90%);
+  /* Lightened white color */
+  --title-color: hsl(0, 0%, 5%);
+  /* Darkened title color */
+  --text-color: hsl(0, 0%, 30%);
+  /* Darkened text color */
+  --text-color-light: hsl(0, 0%, 60%);
+  /* Darkened lighter text color */
+  --body-color: hsl(0, 0%, 80%);
+  /* Lightened body color */
+  --container-color: hsl(0, 0%, 75%);
+  /* Lightened container color */
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Bai Jamjuree", sans-serif;
+  --body-font: 'Open Sans', sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
@@ -92,17 +102,6 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
-
-
-/*========== Variables Dark theme ==========*/
-
-
-/*========== 
-	Color changes in some parts of 
-	the website, in dark theme
-==========*/
-
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -169,7 +168,6 @@ img {
 
 .main {
   overflow: hidden;
-  /* For animation ScrollReveal */
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -196,7 +194,7 @@ img {
   column-gap: .5rem;
   align-items: center;
   font-weight: var(--font-semi-bold);
-  color: var(--title-color)
+  color: var(--text-color)
 }
 
 .nav__logo-circle,
@@ -764,12 +762,6 @@ img {
   background-color: var(--white-color);
 }
 
-/*=============== CONTACT ===============*/
-
-/* Opaque placeholder */
-
-
-/* Move label up & sticky label */
 
 
 /*=============== FOOTER ===============*/
@@ -801,14 +793,6 @@ img {
 .footer__copy {
   text-align: center;
 }
-
-/*=============== SCROLL BAR ===============*/
-
-
-/*=============== SCROLL UP ===============*/
-
-
-/* Show Scroll Up */
 
 
 /*=============== BREAKPOINTS ===============*/
@@ -1043,6 +1027,7 @@ img {
   .services__content {
     padding: 6.5rem 1.5rem 3.5rem;
     border: 6px solid var(--black-color);
+    font-size: var(--h2-font-size);
   }
 
   .services__icon i {
@@ -1067,6 +1052,11 @@ img {
     padding-block: 3rem 1rem;
   }
 
+  .projects__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1.25rem;
+  }
+
   .projects__card {
     padding: 1.25rem 1.25rem 2.5rem;
   }
@@ -1077,6 +1067,7 @@ img {
 
   .projects__content {
     margin-bottom: 2rem;
+    font-size: var(--h2-font-size);
   }
 
   .footer__container {
